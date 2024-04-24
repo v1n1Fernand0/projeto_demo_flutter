@@ -1,4 +1,8 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:projeto_demo_alura/data/task_inherited.dart';
+import 'package:projeto_demo_alura/screens/form_screen.dart';
 import 'screens/initial_screen.dart';
 
 void main() {
@@ -14,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const InitialScreen(),
+      home: TaskInherited(child: const InitialScreen()),
     );
   }
 }
